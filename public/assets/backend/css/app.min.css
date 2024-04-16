@@ -1,0 +1,137 @@
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link{
+    margin-left: 2vh;
+  }
+  .required{
+    color: red;
+  }
+  #image_preview{
+    width: 85px !important;
+    height: 85px !important;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    opacity: 85%;
+  } 
+  
+  
+  .swal2-confirm {
+    margin-right: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #01015ec4;
+  }
+  
+  
+  @media (max-width: 540px) {
+  
+    .table-container{
+      width: 350px;
+      overflow-x: auto;
+    }
+    
+    .responsive {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  }
+  
+  
+  .select2-container--bootstrap4 .select2-selection--multiple .select2-selection__choice {
+    float: left;
+    padding: 0;
+    padding-right: 0.75rem;
+    margin-top: calc(0.375rem - 2px);
+    margin-right: 0.375rem;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #bdc6d0;
+    border-radius: 0.2rem;
+    background-color: #00a5ba;
+  }
+
+  .swal2-confirm {
+    background-color: rgba(0, 128, 0, 0.751);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+  }
+
+  .swal2-cancel {
+    background-color: rgb(228, 90, 90);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+  }
+  
